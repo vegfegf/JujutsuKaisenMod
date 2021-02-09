@@ -26,7 +26,7 @@ public class GojoArmor extends JujutsuKaisenArmor{
 	@Override
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot, ModelBiped _default) 
 	{
-			if(itemStack.isEmpty() && itemStack.getItem() instanceof JujutsuKaisenArmor)
+			if(!itemStack.isEmpty() && itemStack.getItem() instanceof JujutsuKaisenArmor)
 			{
 				ModelBiped model = new ModelBiped(1.0F);
 				
