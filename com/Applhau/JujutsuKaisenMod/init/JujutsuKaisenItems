@@ -21,9 +21,10 @@ public class JujutsuKaisenItems
 	public static final Item CURSED_CLOTH = new JujutsuKaisenItem("cursed_cloth");
 	public static final Item CURSED_ENERGY = new JujutsuKaisenItem("cursed_energy");
 	
-	public static final ArmorMaterial GOJO_EYEBAND_MATERIAL = EnumHelper.addArmorMaterial("gojo", Reference.MOD_ID + ":gojo", 40, new int[]{2, 7, 9, 2}, 0, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F);
+	public static final ArmorMaterial GOJO_EYEBAND_MATERIAL = EnumHelper.addArmorMaterial("gojo2", Reference.MOD_ID + ":gojo2", 40, new int[]{2, 7, 9, 2}, 0, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F);
 	public static final Item GOJO_EYEBAND = new Gojo("gojo_eyeband", GOJO_EYEBAND_MATERIAL, EntityEquipmentSlot.HEAD);
-	public static final Item GOJO_JACKET = new Gojo("gojo_jacket", GOJO_EYEBAND_MATERIAL, EntityEquipmentSlot.CHEST);
-
+	//gojo eyeband is using a model that I have made
+	public static final Item GOJO_JACKET = new GojoArmor("gojo_jacket", GOJO_EYEBAND_MATERIAL, 0, EntityEquipmentSlot.CHEST);
+	//gojo jacket is using modelbiped
 	
 }
