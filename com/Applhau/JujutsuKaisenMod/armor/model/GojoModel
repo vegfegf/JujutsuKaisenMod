@@ -15,12 +15,12 @@ public class GojoModel extends ModelBiped
 		textureWidth = 64;
 		textureHeight = 64;
 
-		bipedBody.cubeList.add(new ModelBox(bipedBody, 16, 16, -4.0F, -24.0F, -2.0F, 8, 12, 4, 0.0F, false));
-		bipedLeftArm.cubeList.add(new ModelBox(bipedLeftArm, 32, 48, 4.0F, -24.0F, -2.0F, 4, 12, 4, 0.0F, false));
+		bipedBody.cubeList.add(new ModelBox(bipedBody, 16, 16, -4.0F, -24.0F, -2.0F, 8, 12, 4, 0.0F, true));
+		bipedLeftArm.cubeList.add(new ModelBox(bipedLeftArm, 32, 48, 4.0F, -24.0F, -2.0F, 4, 12, 4, 0.0F, true));
 		bipedRightArm.cubeList.add(new ModelBox(bipedRightArm, 40, 16, -8.0F, -24.0F, -2.0F, 4, 12, 4, 0.0F, false));
 		bipedRightLeg.cubeList.add(new ModelBox(bipedRightLeg, 16, 48, -4.0F, -12.0F, -2.0F, 4, 12, 4, 0.0F, false));
-		bipedLeftLeg.cubeList.add(new ModelBox(bipedLeftLeg, 0, 16, 0.0F, -12.0F, -2.0F, 4, 12, 4, 0.0F, false));
-		bipedHead.cubeList.add(new ModelBox(bipedHead, 0, 0, -4.0F, -32.0F, -4.0F, 8, 8, 8, 0.0F, false));
+		bipedLeftLeg.cubeList.add(new ModelBox(bipedLeftLeg, 0, 16, 0.0F, -12.0F, -2.0F, 4, 12, 4, 0.0F, true));
+		bipedHead.cubeList.add(new ModelBox(bipedHead, 0, 0, -4.0F, -32.0F, -4.0F, 8, 8, 8, 0.0F, true));
 
 	}
 
@@ -36,9 +36,6 @@ public class GojoModel extends ModelBiped
 		bipedBody.render(scale);
 		bipedLeftArm.render(scale);
 		bipedRightArm.render(scale);
-		bipedRightLeg.render(scale);
-		bipedLeftLeg.render(scale);
-		bipedHead.render(scale);
 		GlStateManager.popMatrix();
 	}
 
